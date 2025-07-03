@@ -7,6 +7,8 @@ module.exports = (conf) => {
     conf.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
     // raw copy site assets to <output>
     conf.addPassthroughCopy({ 'src/_includes/assets/': '/assets/' });
+    // ignore pages that have been archived
+    conf.ignores.add('src/archived');
 
     // process all templates / html files through nunjucks
     // where <input> dir is ./src and <output> is ./dest
