@@ -1,0 +1,30 @@
+
+/* Terminal refers to the little blinking terminal cursor next to the i
+titles, return refers to the "go back" link each page except the landing
+page has. */
+#terminal, #return{
+    font-size: 0.65em;
+    display: inline-block;
+    animation: blinker 5s linear infinite;
+    color: var(--colour-orange);
+    position: relative;
+    bottom: 0.24em;
+}
+
+/* a specific offset for the persil image on the index page */
+#persil-main-page{
+    animation: neon 5s linear infinite;
+    position: relative;
+    width: 17em;
+    height: 17em;
+    right: 2.5em;
+}
+
+/* a specific offset for the persil image on 404 pages */
+#fourohfour{
+    animation: neon 5s linear infinite;
+    position: relative;
+    width: 27em !important;
+    height: 29em !important;
+    left: 10em !important;
+}

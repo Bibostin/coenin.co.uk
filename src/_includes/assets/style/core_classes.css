@@ -1,0 +1,85 @@
+
+/* class to apply to a links that don't need a bootup animation */
+.no-bootup{
+    animation: none !important;
+}
+
+/*Stops paragraph text from spreading across the whole page and pulling
+page titles along with them due to flex*/
+.content{
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 100em;
+}
+
+/*applied to web pages (<body>) that dont have a full page of content or
+to elements that require centering (dont apply to those that do, as Page
+titles will be cut off) */
+.centered{
+    align-items: center;
+}
+
+/* used to encase a block of text in a uniform backing square, useful for
+readability. */
+.contained {
+    background: #140700;
+    outline-style: solid ;
+    outline-width: thin;
+    outline-offset: 0.35em;
+    outline-color: var(--colour-orange);
+    max-width: 100em
+}
+
+/* alternate version of contained with a smaller width, should be used on
+text dense html elements (e.g. writings) to reduce side reading strain */
+.contained-shortwidth {
+    background: #140700;
+    outline-style: solid ;
+    outline-width: thin;
+    outline-offset: 0.35em;
+    outline-color: var(--colour-orange);
+    max-width: 60em
+}
+
+.emphasis{
+    color: var(--colour-orange);
+    animation: neon 0.75s linear infinite;
+    font-weight: bold;
+}
+
+.emphasis:hover{
+    animation: textShadow 0.5s linear infinite;
+}
+
+.smaller{
+    color: var(--colour-grey);
+    font-size: 0.65em;
+}
+
+.dir-wrapper{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    column-gap: 2em;
+}
+
+.dir-wrapper-element{
+    min-width: 14em;
+}
+
+/*Image class used exclusively for scaling banner images*/
+.banner{
+    width: 5.5em;
+    height: 1.93752em;
+    animation: bootup 1s linear;
+}
+
+.thumbnail{
+    width: 12.5em;
+    height:12.5em;
+    margin: 0.25em;
+    background: #140700;
+    outline-style: solid ;
+    outline-width: 0.10em;
+    outline-color: var(--colour-orange);
+}

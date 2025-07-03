@@ -1,0 +1,36 @@
+@import "core_animations.css";
+@import "core_elements.css"
+@import "core_classes.css"
+@import "core_ids.css"
+@import "audioplayer.css";
+
+
+@font-face {font-family: 'Web437_compaq';
+	src: url('/assets/fonts/Web437_Compaq_Port3.woff') format('woff');
+}
+@font-face{font-family: 'iosevka';
+	src: url('/assets/fonts/iosevka-ss08-regular.woff') format('woff');
+}
+
+:root{
+    --colour-black: #1a1616;
+    --colour-orange: #fa7d00;
+    --colour-white: #FFFFFF;
+    --colour-grey: #a8acb3;
+    font-family: 'Web437_compaq', monospace;
+    background: url(/assets/images/background.png) repeat center center fixed var(--colour-black);
+    animation: upwards 50s linear infinite;
+    scrollbar-base-color:#ff2050;
+    scrollbar-color: var(--colour-orange) #000;
+}
+
+html, body{
+    display: flex;
+    justify-content: center;
+    animation: bootup 0.5s linear 1;
+    color: var(--colour-white);
+    width: 100%;
+    height: 100%;
+    margin: 0; /* fixes some wierdness with chromium scrollbars. Thanks Lily! */
+    background: none; /*This hides the background subsequent child DOM elements inherit from root, and lets the two stack backgrounds IN root cover the entire document.*/
+} 
