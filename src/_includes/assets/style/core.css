@@ -1,7 +1,7 @@
 @import "core_animations.css";
-@import "core_elements.css"
-@import "core_classes.css"
-@import "core_ids.css"
+@import "core_elements.css";
+@import "core_classes.css";
+@import "core_ids.css";
 @import "audioplayer.css";
 
 
@@ -26,6 +26,7 @@
 
 html, body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     animation: bootup 0.5s linear 1;
     color: var(--colour-white);
