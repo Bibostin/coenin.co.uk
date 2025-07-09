@@ -1,0 +1,47 @@
+/* audio player interactable button */                                     
+.audio-player-button{                                                      
+    height: 1.5em;                                                         
+    width: 1em;                                                          
+}   
+
+#audio-player{
+
+}
+#audio-player:hover{
+    cursor: grab;
+}
+
+/*styling for volume bar */
+/* chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      -webkit-appearance: none;
+      overflow: hidden;
+      width: 10em;
+      background-color: var(--colour-opaque);
+    }
+    input[type='range']::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+      height: 1em;
+      width: 30em;
+      margin-top: -0.2em;
+      margin-bottom: -0.2em;
+      color: var(--colour-black);
+    }
+    input[type='range']::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 1em;
+      height: 1em;
+      cursor: ew-resize;
+      background: var(--colour-black);
+      box-shadow: -80px 0 0 80px var(--colour-orange);
+    }
+}
+
+/* firefox */
+input[type="range"]::-moz-range-progress {
+    background-color: var(--colour-orange);
+}
+input[type="range"]::-moz-range-track {
+  background-color: var(--colour-white);
+}
