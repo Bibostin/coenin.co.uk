@@ -1,6 +1,6 @@
 /*creates a cool orange glow bootup on startup of the webpage*/
 @keyframes bootup {
-	30% {background: var(--colour-orange)} /* <--- see core.css */
+  30% {background: var(--colour-orange)}
 }
 
 /* used for the background motion animation */
@@ -10,7 +10,7 @@
 	animation-fill-mode: forwards;
 }
 
-/* significantly rougher then neon */
+/* significantly rougher then glow */
 @keyframes blink {
 	50% {opacity: 30%;}
 }
@@ -46,4 +46,3 @@ gives the cool effect when you hover over orange text. */
   95% {text-shadow: 2.1841838852799786px  0 1px rgba(0,30,255,0.5), -2.1841838852799786px  0 1px rgba(255,0,80,0.3), 0 0 3px;}
   100% {text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px  0 1px rgba(255,0,80,0.3), 0 0 3px;}
 }
-

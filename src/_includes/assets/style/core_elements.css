@@ -1,50 +1,50 @@
 
-a {                                                                             
-    text-decoration: underline;                                                 
-    color: var(--colour-white);                                                 
-}                                                                               
-a:hover{                                                                        
-    color: var(--colour-orange);                                                
-    text-decoration: underline;                                                 
-    animation: blinker 2s linear infinite;                                      
-}                                                                               
-a:active, #persil-main-page:active, .banner:active{                             
-    animation: bootup 0.5s linear 1;}                                           
-    strong{ color: var(--colour-orange);                                        
-    animation: neon 5s linear infinite;                                         
-    animation: textShadow 0.5s;}                                                
-                                                                                
-strong:hover{                                                                   
-    animation: textShadow 0.5s linear infinite;                                 
-}                                                                               
-                                                                                
-h1{                                                                             
-    color: var(--colour-orange);                                                
-    font-family: 'iosevka';                                                     
-    font-size: 1.85em;                                                          
-    animation: neon 5s linear infinite;                                         
+a {
+    text-decoration: underline;
+    color: var(--colour-white);
+}
+a:hover{
+    color: var(--colour-orange);
+    text-decoration: underline;
+    animation: blinker 2s linear infinite;
+}
+a:active, #persil-main-page:active, .banner:active{
+    animation: bootup 0.5s linear 1;}
+    strong{ color: var(--colour-orange);
+    animation: glow 5s linear infinite;
+    animation: textShadow 0.5s;}
+
+strong:hover{
+    animation: textShadow 0.5s linear infinite;
+}
+
+h1{
+    color: var(--colour-orange);
+    font-family: 'iosevka';
+    font-size: 1.85em;
+    animation: glow 5s linear infinite;
     position: relative; /*needs to be here as pos-rel doesn't extend beyond first child of a dom element (cant put it in html or body, could do root, but I think this works better)*/
-    right: 0.9em;   /*If your reading this, I reccomend properly learning how to use relative units and flex or grid rather then hacking your page together with offsets like I have, I'm fine with my page looking jank on mobile but you should do it properly.*/
-    top: 1em;                                                                   
-    animation: textShadow 0.5s;                                                 
-}                                                                               
-h1:hover{                                                                       
-    animation: textShadow 0.5s linear infinite;                                 
-}                                                                               
-                                                                                
-button{                                                                         
-    background-color: Transparent;                                              
-    background-repeat:no-repeat;                                                
-    border-style: solid;                                                        
-    border-width: thin;                                                         
-    border-color: white;                                                        
-    color: white;                                                               
-}                                                                               
-button:hover{                                                                   
-    border-color: var(--colour-orange);                                         
-    color: var(--colour-orange);                                                
-    cursor: help;                                                               
-}                                                                               
-button:active{                                                                  
-    animation: bootup 0.5s linear 1;                                            
-} 
+    right: 1.5em;   /*If your reading this, I reccomend properly learning how to use relative units and flex or grid rather then hacking your page together with offsets like I have, I'm fine with my page looking jank on mobile but you should do it properly.*/
+    top: 1em;
+    animation: textShadow 0.5s;
+}
+h1:hover{
+    animation: textShadow 0.5s linear infinite;
+}
+
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border-style: solid;
+    border-width: thin;
+    border-color: white;
+    color: white;
+}
+button:hover{
+    border-color: var(--colour-orange);
+    color: var(--colour-orange);
+    cursor: help;
+}
+button:active{
+    animation: bootup 0.5s linear 1;
+}

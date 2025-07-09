@@ -25,9 +25,9 @@ readability. */
     background: #140700;
     outline-style: solid ;
     outline-width: thin;
-    outline-offset: 0.35em;
     outline-color: var(--colour-orange);
-    max-width: 100em
+    max-width: 100em;
+    padding: 0.4em;
 }
 
 /* alternate version of contained with a smaller width, should be used on
@@ -36,44 +36,54 @@ text dense html elements (e.g. writings) to reduce side reading strain */
     background: #140700;
     outline-style: solid ;
     outline-width: thin;
-    outline-offset: 0.35em;
+    outline-offset: 0.1em;
     outline-color: var(--colour-orange);
-    max-width: 60em
+    max-width: 60em;
+    padding: 0.4em;
 }
 
+/* class to use for headings, titles etc*/
 .emphasis{
     color: var(--colour-orange);
-    animation: neon 0.75s linear infinite;
+    animation: glow 0.75s linear infinite;
     font-weight: bold;
 }
-
 .emphasis:hover{
     animation: textShadow 0.5s linear infinite;
 }
 
+/* class to use for subtle text, jokes etc */
 .smaller{
     color: var(--colour-grey);
     font-size: 0.65em;
 }
 
+/* class to use for directory landing pages styling */
 .dir-wrapper{
     display: flex;
     margin-left: 10%;
     margin-right: 10%;
     column-gap: 2em;
 }
-
 .dir-wrapper-element{
     min-width: 14em;
 }
 
-/*Image class used exclusively for scaling banner images*/
+/*class to use for elements that do not stay attached to the rest of the page.*/
+.dragable{
+    /* position: absolute -- applied by dragger.js to parent element of those assigned this class */
+    cursor: move;
+}
+    
+
+/*Image class used exclusively for scaling netizen banner images*/
 .banner{
     width: 5.5em;
     height: 1.93752em;
     animation: bootup 1s linear;
 }
 
+/* class to use for thumbnail images that have links to a full res equivilent */
 .thumbnail{
     width: 12.5em;
     height:12.5em;

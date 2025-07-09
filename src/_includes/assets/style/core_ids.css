@@ -8,12 +8,13 @@ page has. */
     animation: blinker 5s linear infinite;
     color: var(--colour-orange);
     position: relative;
-    bottom: 0.24em;
+    bottom: 0.25em;
+    right:  0.50em;
 }
 
-/* a specific offset for the persil image on the index page */
+/* a specific offset for the persil image on the primary index page */
 #persil-main-page{
-    animation: neon 5s linear infinite;
+    animation: glow 5s linear infinite;
     position: relative;
     width: 17em;
     height: 17em;
@@ -22,7 +23,7 @@ page has. */
 
 /* a specific offset for the persil image on 404 pages */
 #fourohfour{
-    animation: neon 5s linear infinite;
+    animation: glow 5s linear infinite;
     position: relative;
     width: 27em !important;
     height: 29em !important;
