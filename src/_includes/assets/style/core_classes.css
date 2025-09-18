@@ -45,7 +45,7 @@ text dense html elements (e.g. writings) to reduce side reading strain */
 /* class to use for headings, titles etc*/
 .emphasis{
     color: var(--colour-orange);
-    animation: glow 0.75s linear infinite;
+    animation: glow 3s linear infinite;
     font-weight: bold;
 }
 .emphasis:hover{
