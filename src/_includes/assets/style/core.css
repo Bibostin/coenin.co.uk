@@ -2,7 +2,8 @@
 @import "core_elements.css";
 @import "core_classes.css";
 @import "core_ids.css";
-@import "audioplayer.css";
+@import "js_audioplayer.css";
+@import "js_dragger.css";
 
 
 @font-face {font-family: 'Web437_compaq';
@@ -33,5 +34,5 @@ html, body{
     width: 100%;
     height: 100%;
     margin: 0; /* fixes some wierdness with chromium scrollbars. Thanks Lily! */
-    background: none; /*This hides the background subsequent child DOM elements inherit from root, and lets the two stack backgrounds IN root cover the entire document.*/
+    background: none; /*:root passes its background def to ALL child elements in the DOM, hide it here. */
 } 

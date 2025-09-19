@@ -1,0 +1,5 @@
+/*class to use for elements that do not stay attached to the rest of the page.*/
+/* NOTE: position: absolute applied by dragger.js to parent elements of this class */
+.dragable{                                                                      
+    cursor: move;                                                               
+}    
