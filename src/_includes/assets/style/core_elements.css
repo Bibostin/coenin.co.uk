@@ -23,8 +23,8 @@ h1{
     font-family: 'iosevka';
     font-size: 1.85em;
     animation: glow 5s linear infinite;
-    position: relative; /*needs to be here as pos-rel doesn't extend beyond first child of a dom element (cant put it in html or body, could do root, but I think this works better)*/
-    right: 1.5em;   /*If your reading this, I reccomend properly learning how to use relative units and flex or grid rather then hacking your page together with offsets like I have, I'm fine with my page looking jank on mobile but you should do it properly.*/
+    position: relative;  /* pos rel isn't inherited (can't put it in html or body) root maybe? I think this works better */
+    right: 1.5em;   /* this is JANK, if you read this, learn flex or grid like a sane person instead of using offsets. I'm lazy. */
     top: 1em;
     animation: textShadow 0.5s;
 }

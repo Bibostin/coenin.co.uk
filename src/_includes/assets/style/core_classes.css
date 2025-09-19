@@ -1,18 +1,18 @@
 
-/* class to apply to a links that don't need a bootup animation */
+/* class to apply to a link that don't need a bootup animation */
 .no-bootup{
     animation: none !important;
 }
 
-/*Stops paragraph text from spreading across the whole page and pulling
-page titles along with them due to flex*/
+/* Stops paragraph text from spreading across the whole page and pulling
+page titles along with them due to flex */
 .content{
     margin-left: 5%;
     margin-right: 5%;
     max-width: 100em;
 }
 
-/*applied to web pages (<body>) that dont have a full page of content or
+/* applied to web pages (<body>) that dont have a full page of content or
 to elements that require centering (dont apply to those that do, as Page
 titles will be cut off) */
 .centered{
@@ -31,7 +31,8 @@ readability. */
 }
 
 /* alternate version of contained with a smaller width, should be used on
-text dense html elements (e.g. writings) to reduce side reading strain */
+text dense html elements (e.g. blogposting babble) to reduce eye strain
+from reading left -> write continously */
 .contained-shortwidth {
     background: #140700;
     outline-style: solid ;
@@ -70,11 +71,10 @@ text dense html elements (e.g. writings) to reduce side reading strain */
 }
 
 /*class to use for elements that do not stay attached to the rest of the page.*/
+/* NOTE: position: absolute applied by dragger.js to parent elements of this class */
 .dragable{
-    /* position: absolute -- applied by dragger.js to parent element of those assigned this class */
     cursor: move;
 }
-    
 
 /*Image class used exclusively for scaling netizen banner images*/
 .banner{
