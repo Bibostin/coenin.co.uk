@@ -1,4 +1,14 @@
-{% extends "layouts/core.html" %}                                               
-{% block content %}                                                             
-    {{ content | safe }}                                                        
-{% endblock %} 
+{% extends "layouts/core.html" %}
+
+{% block header %}
+
+    <h1 class='offset-landing'>
+        <p id='terminal'>:></p>
+        <span class='emphasis'> {{ page_title }}</span>
+    </h1>
+
+    {% block content %}
+        {{ content | safe }}
+    {% endblock %}
+
+{% endblock %}
