@@ -12,6 +12,20 @@ page titles along with them due to flex */
     max-width: 100em;
 }
 
+/* TODO: should these offsets really go here? maybe better in core_ids */
+/* offset for directory H1 */
+.offset-directory{
+    position: relative;
+    right: 8em;
+    top: 1.5em;
+}
+/* offset for landing page H1 */
+.offset-landing{
+    position: relative;
+    right: 1.75em;
+    top: 1.2em;
+}
+
 /* applied to web pages (<body>) that dont have a full page of content or
 to elements that require centering (dont apply to those that do, as Page
 titles will be cut off) */
@@ -46,7 +60,6 @@ from reading left -> write continously */
 /* class to use for headings, titles etc*/
 .emphasis{
     color: var(--colour-orange);
-    animation: glow 3s linear infinite;
     font-weight: bold;
 }
 .emphasis:hover{
@@ -59,15 +72,16 @@ from reading left -> write continously */
     font-size: 0.65em;
 }
 
-/* class to use for directory landing pages styling */
+/* class to use for directory index pages flex styling */
 .dir-wrapper{
     display: flex;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 5em;
+    margin-bottom: 1em;
     column-gap: 2em;
 }
 .dir-wrapper-element{
-    min-width: 14em;
+    max-width: 27em;
 }
 
 /*class to use for elements that do not stay attached to the rest of the page.*/

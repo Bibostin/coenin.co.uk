@@ -5,11 +5,10 @@ page has. */
 #terminal, #return{
     font-size: 0.65em;
     display: inline-block;
-    animation: blinker 5s linear infinite;
+    animation: blink 5s linear infinite;
     color: var(--colour-orange);
     position: relative;
     bottom: 0.25em;
-    right:  0.50em;
 }
 
 /* a specific offset for the persil image on the primary index page */

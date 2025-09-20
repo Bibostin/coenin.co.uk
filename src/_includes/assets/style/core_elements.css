@@ -23,9 +23,6 @@ h1{
     font-family: 'iosevka';
     font-size: 1.85em;
     animation: glow 5s linear infinite;
-    position: relative;  /* pos rel isn't inherited (can't put it in html or body) root maybe? I think this works better */
-    right: 1.5em;   /* this is JANK, if you read this, learn flex or grid like a sane person instead of using offsets. I'm lazy. */
-    top: 1em;
     animation: textShadow 0.5s;
 }
 h1:hover{
