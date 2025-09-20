@@ -4,62 +4,44 @@
     animation: none !important;
 }
 
-/* Stops paragraph text from spreading across the whole page and pulling
-page titles along with them due to flex */
-.content{
-    margin-left: 5%;
-    margin-right: 5%;
-    max-width: 100em;
-}
-
-/* TODO: should these offsets really go here? maybe better in core_ids */
-/* offset for directory H1 */
-.offset-directory{
-    position: relative;
-    right: 8em;
-    top: 1.5em;
-}
-/* offset for landing page H1 */
-.offset-landing{
-    position: relative;
-    right: 1.75em;
-    top: 1.2em;
-}
-
-/* applied to web pages (<body>) that dont have a full page of content or
-to elements that require centering (dont apply to those that do, as Page
-titles will be cut off) */
-.centered{
-    align-items: center;
-}
-
 /* used to encase a block of text in a uniform backing square, useful for
 readability. */
-.contained {
+[class*="contained-"] {
     background: #140700;
     outline-style: solid ;
     outline-width: thin;
     outline-color: var(--colour-orange);
-    max-width: 100em;
     padding: 0.4em;
 }
-
-/* alternate version of contained with a smaller width, should be used on
-text dense html elements (e.g. blogposting babble) to reduce eye strain
-from reading left -> write continously */
-.contained-shortwidth {
-    background: #140700;
-    outline-style: solid ;
-    outline-width: thin;
-    outline-offset: 0.1em;
-    outline-color: var(--colour-orange);
+/* normal contained width */
+.contained-midwidth {
     max-width: 60em;
-    padding: 0.4em;
+}
+/* alt version for text dense blocks, reduces eye strain from
+reading left -> write continously */
+.contained-shortwidth {
+    max-width: 40em;
+}
+
+/* used to offset h1 elements a fixed amount, applied depending on
+ the DOM encapsulation strategy */
+[class*="offset-"] {
+    position: relative;
+    top: 1.55em;
+}
+.offset-centered {
+    right: 1.75em;
+}
+.offset-midwidth {
+    right: 8em;
+}
+.offset-shortwidth{
+    right: 3.7em;
 }
 
 /* class to use for headings, titles etc*/
 .emphasis{
-    color: var(--colour-orange);
+color: var(--colour-orange);
     font-weight: bold;
 }
 .emphasis:hover{

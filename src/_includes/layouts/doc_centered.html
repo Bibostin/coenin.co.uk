@@ -1,0 +1,16 @@
+<!-- template with a centered header !-->
+
+{% extends "layouts/core.html" %}
+
+{% block header %}
+    <main>
+        <h1 class='offset-centered'>
+            <p id='terminal'>:></p>
+            <span class='emphasis'> {{ page_title }}</span>
+        </h1>
+
+        {% block content %}
+            {{ content | safe }}
+        {% endblock %}
+    </main>
+{% endblock %}

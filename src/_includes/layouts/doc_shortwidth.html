@@ -1,0 +1,21 @@
+<!-- doc with a header compliant with class / contained-shortwidth  and offset-shortwidth !-->
+
+
+{% extends "layouts/core.html" %}
+
+{% block header %}
+    <main>
+        <h1 class='offset-shortwidth'>
+            <p id='terminal'>:></p>
+            <span class='emphasis'> {{ page_title }}</span>
+            <a id='return' href={{ return_link_url | require_string("return_link_url") }}>
+                //Go back//
+            </a>
+        </h1>
+
+        {% block content %}
+            {{ content | safe }}
+        {% endblock %}
+
+    </main>
+{% endblock %}
